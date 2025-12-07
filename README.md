@@ -2,18 +2,18 @@
 FabNet-2.5k is a curated dataset consisting of 2,500 high-quality images of fabric textures. This dataset was created to support research in computer vision, specifically for the task of automated textile material identification.
 
 It is designed for training Deep Learning models (such as CNNs or Vision Transformers) to distinguish between natural and synthetic fibers.
-📂 Dataset Structure
+
+#    📂 Dataset Structure
 
 The dataset is organized into a standard directory structure compatible with torchvision.datasets.ImageFolder and other standard dataloaders.
 
-    Total Images: ~2,500
-
-    Classes: 5 distinct fabric types
-
-    Format: JPG/PNG
+Total Images: ~2,500
+Classes: 5 distinct fabric types
+Format: JPG
 
 Directory Tree
 
+```
 FabNet-2.5k/
 ├── train/                  # Training set
 │   ├── Cotton/
@@ -27,8 +27,9 @@ FabNet-2.5k/
     ├── Polyester/
     ├── Silk/
     └── Wool/
+```
 
-🧶 Classes
+# 🧶 Classes
 
 The dataset includes the following 5 texture categories:
 
@@ -42,7 +43,12 @@ The dataset includes the following 5 texture categories:
 
     Wool: Natural animal fiber, fuzzy or thick texture.
 
-🚀 Quick Start (Python)
+
+
+# 🚀 Quick Start
+
+Download Dataset:
+Google Drive - https://drive.google.com/drive/folders/1_B5v7d_Qrmm0HJETYfKkbnq78ygijEK9?usp=drive_link
 
 You can easily load this dataset using PyTorch:
 
@@ -64,7 +70,7 @@ print(f"Classes: {train_data.classes}")
 # Output: ['Cotton', 'Linen', 'Polyester', 'Silk', 'Wool']
 ```
 
-📝 Citation
+# 📝 Citation
 
 If you use this dataset in your research or project, please cite it as follows:
 
@@ -79,6 +85,6 @@ If you use this dataset in your research or project, please cite it as follows:
 }
 ```
 
-📜 License
+# 📜 License
 
 This dataset is licensed under the Creative Commons Attribution 4.0 International license.
